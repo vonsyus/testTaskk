@@ -1,0 +1,1604 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>GetActive</title>
+
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/fotorama.css">
+	<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+	<!-- <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css"> -->
+	<link rel="stylesheet" href="css/owl.carousel.min.css">
+	<link rel="stylesheet" href="css/owl.theme.default.min.css">
+	<link rel="stylesheet" href="css/style.css">
+
+	<link rel="icon" href="img/icon.ico" type="image/x-icon">
+
+	<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+	<!-- <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script> -->
+
+	<script src="js/fotorama.js"></script>
+	<script src="js/owl.carousel.min.js"></script>
+</head>
+<body>
+
+	<div class="nav-block">
+		<div class="container">
+			<div class="row">
+				<div class="nav col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+					<div class="logo col-xl-3 col-lg-3 col-md-3 col-sm-3 col-12">
+						<div class="mobile"><img src="img/menu.png" alt=""></div>
+						<a href="#"><img src="img/logo.png" alt="" class="logo__image"></a>
+						<div class="mobile nav__interaction">
+							<a href="#">
+								<img src="img/search.png" alt="" class="search">
+							</a>
+							<a href="#">
+								<img src="img/shopping-cart.png" alt="">
+								<div class="cart-count">12</div>
+							</a>
+						</div>
+					</div>
+					<div class="nav__links col-xl-5 col-lg-6 col-md-6 col-sm-6">
+						<a href="#" class="first links__item">Каталог</a>
+						<a href="#" class="links__item">Скидки</a>
+						<a href="#" class="links__item">Блог</a>
+						<a href="#" class="links__item">Контакты</a>
+					</div>
+					<div class="desktop nav__interaction offset-xl-3 offset-lg-2 offset-md-1 offset-sm-1 col-xl-1 col-lg-1 col-md-2 col-sm-2">
+						<a href="#">
+							<img src="img/search.png" alt="" class="search">
+						</a>
+						<a href="#">
+							<img src="img/shopping-cart.png" alt="">
+							<div class="cart-count">12</div>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="product-block">
+		<div class="container">
+			<div class="row">
+				<div class="return col-xl-2 col-lg-2 col-md-3 col-sm-4 col-6">
+					<a href="#">
+						<div class="arrow"></div> Уличные батуты
+					</a>
+				</div>
+				<div class="code offset-xl-8 offset-lg-8 offset-md-6 offset-sm-5 col-xl-2 col-lg-2 col-md-3 col-sm-3 col-6">
+					Код: 12435658
+				</div>
+			</div>
+
+			<div class="row mobile tablet">
+				<div class="product col-xl-12 col-12">
+					<div class="product-info col-12 product-info__top">
+						<h1 class="product-info__title">
+							Батут DFC Jump 14 FT 427 см складной Apple Green
+						</h1>
+
+						<div class="rating">
+							<div class="rating__item active" data-rate="1"></div>
+							<div class="rating__item active" data-rate="2"></div>
+							<div class="rating__item active" data-rate="3"></div>
+							<div class="rating__item active" data-rate="4"></div>
+							<div class="rating__item" data-rate="5"></div>
+							<span class="reviews">4 отзыва</span>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="row mobile tablet">
+				<div class="product col-sm-12 col-12">
+					<div class="fotorama invisible col-sm-12 col-12" data-auto="false" id="fotoramaMobile">
+						<img src="img/product1.png" alt="">
+						<img src="img/product1.png" alt="">
+						<img src="img/product1.png" alt="">
+						<img src="img/product1.png" alt="">
+						<img src="img/product1.png" alt="">
+						<img src="img/product1.png" alt="">
+					</div>
+					<div class="current-slide" id="current-slide"></div>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="product col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+					<div class="fotorama__prev-arrow tablet__inv desktop" id="thumbPrev"></div>
+					<div class="fotorama__next-arrow tablet__inv desktop" id="thumbNext"></div>
+
+					<div class="fotorama desktop tablet__inv col-xl-7 col-lg-6 col-md-6 col-sm-5" data-auto="false" id="fotoramaDesktop">
+						<img src="img/product1.png" alt="">
+						<img src="img/product1.png" alt="">
+						<img src="img/product1.png" alt="">
+						<img src="img/product1.png" alt="">
+						<img src="img/product1.png" alt="">
+						<img src="img/product1.png" alt="">
+					</div>					
+
+					<div class="product-info col-xl-5 offset-xl-0 offset-lg-1 offset-md-1 offset-sm-0 col-lg-5 col-md-5 col-sm-12 col-12">
+						<h1 class="product-info__title desktop tablet__inv">
+							Батут DFC Jump 14 FT 427 см складной Apple Green
+						</h1>
+					
+						<div class="rating desktop tablet__inv">
+							<div class="rating__item active" data-rate="1"></div>
+							<div class="rating__item active" data-rate="2"></div>
+							<div class="rating__item active" data-rate="3"></div>
+							<div class="rating__item active" data-rate="4"></div>
+							<div class="rating__item" data-rate="5"></div>
+							<span class="reviews">4 отзыва</span>
+						</div>
+					
+						<div class="product__cost red">
+							39 480 ₽<span class="old-cost ">39 480 ₽</span>
+						</div>
+					
+						<div class="product__description">
+							Беспружинный круглый, диаметр (диагональ): 142 см, нагрузка: 45 кг, сетка
+						</div>
+					
+						<div class="product__specifications">
+							<span class="specifications__size">Диаметр</span>
+							<div class="btn-toolbar prod-sizes" role="toolbar">
+								<div class="btn-group size__button size-active" role="group">
+									2,50 м
+								</div>
+								<div class="btn-group size__button" role="group">
+									1,83 м
+								</div>
+								<div class="btn-group size__button" role="group">
+									1,40 м
+								</div>
+							</div>
+						</div>
+					
+						<div class="product__specifications colors__block">
+							<span class="specifications__color">Цвет</span>
+							<div class="prod__colors">
+								<div class="product__color color-active">
+									<div class="product__color__inner color-1"></div>
+								</div>
+								<div class="product__color">
+									<div class="product__color__inner color-2"></div>
+								</div>
+							</div>
+						</div>
+					
+						<div class="to-shopping-cart__block">
+							<button class="to-shopping-cart__button">В корзину</button>
+						</div>
+					
+						<div class="delivery__block">
+							<img src="img/car.png" alt="">
+							Доставка в&nbsp;
+							<div class="dropdown" id="dropdown">
+								<a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Москву</a>
+								<div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+									<button class="dropdown-item">Москву</button>
+									<button class="dropdown-item">Минск</button>				
+									<button class="dropdown-item">Лондон</button>
+								</div>
+							</div>
+						</div>
+					
+						<div class="delivery__block">
+							<img src="img/warranty.png" alt="">
+							Гарантия 12 месяцев
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="interesting-block">
+		<div class="container">
+			<div class="row">
+				<div class="content-section col-xl-12 col-12">
+					<div class="content-section__title interesting-title">
+						Вам будет интересно
+					</div>
+
+					<div id="tabs1" class="tabs-horizontal">
+						<ul id="owl7">
+							<li id="li1"><a href="#tabs-1">Аксессуары к товару</a></li>
+							<li><a href="#tabs-2">Популярное</a></li>
+							<li><a href="#tabs-3">Термосы</a></li>
+							<li><a href="#tabs-4">Щетки</a></li>
+						</ul>
+										
+						<hr class="additional__nav__line">
+						<div id="tabs-1">
+							<div class="nav-slides desktop">
+								<div class="prev-slide" id="ps1"></div>
+								<div class="next-slide" id="ns1"></div>
+							</div>
+							<div id="owl1" class="owl-carousel">
+								<a href="#" class="goods">
+									<div class="goods__item">
+										<div class="discount">Скидка</div>
+										<img src="img/product2.png" alt="" class="goods__image">
+
+										<div class="goods__title">
+											Бутылка для воды "Dot" (600 мл; черные цветы)
+										</div>
+
+										<div class="rating goods__rating">
+											<div class="rating__item active" data-rate="1"></div>
+											<div class="rating__item active" data-rate="2"></div>
+											<div class="rating__item active" data-rate="3"></div>
+											<div class="rating__item active" data-rate="4"></div>
+											<div class="rating__item" data-rate="5"></div>
+										</div>
+
+										<div class="goods__cost red">
+											29 280 ₽
+											<span class="goods__cost--old">29 280 ₽</span>
+										</div>
+									</div>
+								</a>
+								<a href="#" class="goods">
+									<div class="goods__item">
+										<div class="bestseller">Хит продаж</div>
+										<img src="img/product2.png" alt="" class="goods__image">
+
+										<div class="goods__title">
+											Бутылка для воды "Dot" (600 мл; черные цветы)
+										</div>
+
+										<div class="rating goods__rating">
+											<div class="rating__item active" data-rate="1"></div>
+											<div class="rating__item active" data-rate="2"></div>
+											<div class="rating__item active" data-rate="3"></div>
+											<div class="rating__item active" data-rate="4"></div>
+											<div class="rating__item active" data-rate="5"></div>
+										</div>
+
+										<div class="goods__cost">
+											29 280 ₽
+											<span class="goods__cost--old invisible">29 280 ₽</span>
+										</div>
+									</div>
+								</a>
+								<a href="#" class="goods">
+									<div class="goods__item">
+										<img src="img/product2.png" alt="" class="goods__image">
+
+										<div class="goods__title">
+											Бутылка для воды "Dot" (600 мл; черные цветы)
+										</div>
+
+										<div class="rating goods__rating">
+											<div class="rating__item active" data-rate="1"></div>
+											<div class="rating__item active" data-rate="2"></div>
+											<div class="rating__item active" data-rate="3"></div>
+											<div class="rating__item" data-rate="4"></div>
+											<div class="rating__item" data-rate="5"></div>
+										</div>
+
+										<div class="goods__cost">
+											29 280 ₽
+											<span class="goods__cost--old invisible">29 280 ₽</span>
+										</div>
+									</div>
+								</a>
+								<a href="#" class="goods">
+									<div class="goods__item">
+										<img src="img/product2.png" alt="" class="goods__image">
+
+										<div class="goods__title">
+											Бутылка для воды "Dot" (600 мл; черные цветы)
+										</div>
+
+										<div class="rating goods__rating">
+											<div class="rating__item active" data-rate="1"></div>
+											<div class="rating__item active" data-rate="2"></div>
+											<div class="rating__item active" data-rate="3"></div>
+											<div class="rating__item active" data-rate="4"></div>
+											<div class="rating__item" data-rate="5"></div>
+										</div>
+
+										<div class="goods__cost">
+											29 280 ₽
+											<span class="goods__cost--old invisible">29 280 ₽</span>
+										</div>
+									</div>
+								</a>
+								<a href="#" class="goods">
+									<div class="goods__item">
+										<div class="discount">Скидка</div>
+										<img src="img/product2.png" alt="" class="goods__image">
+
+										<div class="goods__title">
+											Бутылка для воды "Dot" (600 мл; черные цветы)
+										</div>
+
+										<div class="rating goods__rating">
+											<div class="rating__item active" data-rate="1"></div>
+											<div class="rating__item active" data-rate="2"></div>
+											<div class="rating__item active" data-rate="3"></div>
+											<div class="rating__item active" data-rate="4"></div>
+											<div class="rating__item" data-rate="5"></div>
+										</div>
+
+										<div class="goods__cost red">
+											29 280 ₽
+											<span class="goods__cost--old">29 280 ₽</span>
+										</div>
+									</div>
+								</a>
+							</div>
+						</div>
+						<div id="tabs-2">
+							<div class="nav-slides desktop">
+								<div class="prev-slide" id="ps2"></div>
+								<div class="next-slide" id="ns2"></div>
+							</div>
+							<div id="owl2" class="owl-carousel">
+								<a href="#" class="goods">
+									<div class="goods__item">
+										<div class="discount">Скидка</div>
+										<img src="img/product3.png" alt="" class="goods__image">
+
+										<div class="goods__title">
+											Бутылка для воды "Dot" (600 мл; черные цветы)
+										</div>
+
+										<div class="rating goods__rating">
+											<div class="rating__item active" data-rate="1"></div>
+											<div class="rating__item active" data-rate="2"></div>
+											<div class="rating__item active" data-rate="3"></div>
+											<div class="rating__item active" data-rate="4"></div>
+											<div class="rating__item" data-rate="5"></div>
+										</div>
+
+										<div class="goods__cost red">
+											29 280 ₽
+											<span class="goods__cost--old">29 280 ₽</span>
+										</div>
+									</div>
+								</a>
+								<a href="#" class="goods">
+									<div class="goods__item">
+										<div class="bestseller">Хит продаж</div>
+										<img src="img/product3.png" alt="" class="goods__image">
+
+										<div class="goods__title">
+											Бутылка для воды "Dot" (600 мл; черные цветы)
+										</div>
+
+										<div class="rating goods__rating">
+											<div class="rating__item active" data-rate="1"></div>
+											<div class="rating__item active" data-rate="2"></div>
+											<div class="rating__item active" data-rate="3"></div>
+											<div class="rating__item active" data-rate="4"></div>
+											<div class="rating__item active" data-rate="5"></div>
+										</div>
+
+										<div class="goods__cost">
+											29 280 ₽
+											<span class="goods__cost--old invisible">29 280 ₽</span>
+										</div>
+									</div>
+								</a>
+								<a href="#" class="goods">
+									<div class="goods__item">
+										<img src="img/product3.png" alt="" class="goods__image">
+
+										<div class="goods__title">
+											Бутылка для воды "Dot" (600 мл; черные цветы)
+										</div>
+
+										<div class="rating goods__rating">
+											<div class="rating__item active" data-rate="1"></div>
+											<div class="rating__item active" data-rate="2"></div>
+											<div class="rating__item active" data-rate="3"></div>
+											<div class="rating__item" data-rate="4"></div>
+											<div class="rating__item" data-rate="5"></div>
+										</div>
+
+										<div class="goods__cost">
+											29 280 ₽
+											<span class="goods__cost--old invisible">29 280 ₽</span>
+										</div>
+									</div>
+								</a>
+								<a href="#" class="goods">
+									<div class="goods__item">
+										<img src="img/product3.png" alt="" class="goods__image">
+
+										<div class="goods__title">
+											Бутылка для воды "Dot" (600 мл; черные цветы)
+										</div>
+
+										<div class="rating goods__rating">
+											<div class="rating__item active" data-rate="1"></div>
+											<div class="rating__item active" data-rate="2"></div>
+											<div class="rating__item active" data-rate="3"></div>
+											<div class="rating__item active" data-rate="4"></div>
+											<div class="rating__item" data-rate="5"></div>
+										</div>
+
+										<div class="goods__cost">
+											29 280 ₽
+											<span class="goods__cost--old invisible">29 280 ₽</span>
+										</div>
+									</div>
+								</a>
+								<a href="#" class="goods">
+									<div class="goods__item">
+										<div class="discount">Скидка</div>
+										<img src="img/product3.png" alt="" class="goods__image">
+
+										<div class="goods__title">
+											Бутылка для воды "Dot" (600 мл; черные цветы)
+										</div>
+
+										<div class="rating goods__rating">
+											<div class="rating__item active" data-rate="1"></div>
+											<div class="rating__item active" data-rate="2"></div>
+											<div class="rating__item active" data-rate="3"></div>
+											<div class="rating__item active" data-rate="4"></div>
+											<div class="rating__item" data-rate="5"></div>
+										</div>
+
+										<div class="goods__cost red">
+											29 280 ₽
+											<span class="goods__cost--old">29 280 ₽</span>
+										</div>
+									</div>
+								</a>
+							</div>
+						</div>
+						<div id="tabs-3">
+							<div class="nav-slides desktop">
+								<div class="prev-slide" id="ps3"></div>
+								<div class="next-slide" id="ns3"></div>
+							</div>
+							<div id="owl3" class="owl-carousel">
+								<a href="#" class="goods">
+									<div class="goods__item">
+										<div class="discount">Скидка</div>
+										<img src="img/product4.png" alt="" class="goods__image">
+
+										<div class="goods__title">
+											Бутылка для воды "Dot" (600 мл; черные цветы)
+										</div>
+
+										<div class="rating goods__rating">
+											<div class="rating__item active" data-rate="1"></div>
+											<div class="rating__item active" data-rate="2"></div>
+											<div class="rating__item active" data-rate="3"></div>
+											<div class="rating__item active" data-rate="4"></div>
+											<div class="rating__item" data-rate="5"></div>
+										</div>
+
+										<div class="goods__cost red">
+											29 280 ₽
+											<span class="goods__cost--old">29 280 ₽</span>
+										</div>
+									</div>
+								</a>
+								<a href="#" class="goods">
+									<div class="goods__item">
+										<div class="bestseller">Хит продаж</div>
+										<img src="img/product4.png" alt="" class="goods__image">
+
+										<div class="goods__title">
+											Бутылка для воды "Dot" (600 мл; черные цветы)
+										</div>
+
+										<div class="rating goods__rating">
+											<div class="rating__item active" data-rate="1"></div>
+											<div class="rating__item active" data-rate="2"></div>
+											<div class="rating__item active" data-rate="3"></div>
+											<div class="rating__item active" data-rate="4"></div>
+											<div class="rating__item active" data-rate="5"></div>
+										</div>
+
+										<div class="goods__cost">
+											29 280 ₽
+											<span class="goods__cost--old invisible">29 280 ₽</span>
+										</div>
+									</div>
+								</a>
+								<a href="#" class="goods">
+									<div class="goods__item">
+										<img src="img/product4.png" alt="" class="goods__image">
+
+										<div class="goods__title">
+											Бутылка для воды "Dot" (600 мл; черные цветы)
+										</div>
+
+										<div class="rating goods__rating">
+											<div class="rating__item active" data-rate="1"></div>
+											<div class="rating__item active" data-rate="2"></div>
+											<div class="rating__item active" data-rate="3"></div>
+											<div class="rating__item" data-rate="4"></div>
+											<div class="rating__item" data-rate="5"></div>
+										</div>
+
+										<div class="goods__cost">
+											29 280 ₽
+											<span class="goods__cost--old invisible">29 280 ₽</span>
+										</div>
+									</div>
+								</a>
+								<a href="#" class="goods">
+									<div class="goods__item">
+										<img src="img/product4.png" alt="" class="goods__image">
+
+										<div class="goods__title">
+											Бутылка для воды "Dot" (600 мл; черные цветы)
+										</div>
+
+										<div class="rating goods__rating">
+											<div class="rating__item active" data-rate="1"></div>
+											<div class="rating__item active" data-rate="2"></div>
+											<div class="rating__item active" data-rate="3"></div>
+											<div class="rating__item active" data-rate="4"></div>
+											<div class="rating__item" data-rate="5"></div>
+										</div>
+
+										<div class="goods__cost">
+											29 280 ₽
+											<span class="goods__cost--old invisible">29 280 ₽</span>
+										</div>
+									</div>
+								</a>
+								<a href="#" class="goods">
+									<div class="goods__item">
+										<div class="discount">Скидка</div>
+										<img src="img/product4.png" alt="" class="goods__image">
+
+										<div class="goods__title">
+											Бутылка для воды "Dot" (600 мл; черные цветы)
+										</div>
+
+										<div class="rating goods__rating">
+											<div class="rating__item active" data-rate="1"></div>
+											<div class="rating__item active" data-rate="2"></div>
+											<div class="rating__item active" data-rate="3"></div>
+											<div class="rating__item active" data-rate="4"></div>
+											<div class="rating__item" data-rate="5"></div>
+										</div>
+
+										<div class="goods__cost red">
+											29 280 ₽
+											<span class="goods__cost--old">29 280 ₽</span>
+										</div>
+									</div>
+								</a>
+							</div>
+						</div>
+						<div id="tabs-4">
+							<div class="nav-slides desktop">
+								<div class="prev-slide" id="ps4"></div>
+								<div class="next-slide" id="ns4"></div>
+							</div>
+							<div id="owl4" class="owl-carousel">
+								<a href="#" class="goods">
+									<div class="goods__item">
+										<div class="discount">Скидка</div>
+										<img src="img/product5.png" alt="" class="goods__image">
+
+										<div class="goods__title">
+											Бутылка для воды "Dot" (600 мл; черные цветы)
+										</div>
+
+										<div class="rating goods__rating">
+											<div class="rating__item active" data-rate="1"></div>
+											<div class="rating__item active" data-rate="2"></div>
+											<div class="rating__item active" data-rate="3"></div>
+											<div class="rating__item active" data-rate="4"></div>
+											<div class="rating__item" data-rate="5"></div>
+										</div>
+
+										<div class="goods__cost red">
+											29 280 ₽
+											<span class="goods__cost--old">29 280 ₽</span>
+										</div>
+									</div>
+								</a>
+								<a href="#" class="goods">
+									<div class="goods__item">
+										<div class="bestseller">Хит продаж</div>
+										<img src="img/product5.png" alt="" class="goods__image">
+
+										<div class="goods__title">
+											Бутылка для воды "Dot" (600 мл; черные цветы)
+										</div>
+
+										<div class="rating goods__rating">
+											<div class="rating__item active" data-rate="1"></div>
+											<div class="rating__item active" data-rate="2"></div>
+											<div class="rating__item active" data-rate="3"></div>
+											<div class="rating__item active" data-rate="4"></div>
+											<div class="rating__item active" data-rate="5"></div>
+										</div>
+
+										<div class="goods__cost">
+											29 280 ₽
+											<span class="goods__cost--old invisible">29 280 ₽</span>
+										</div>
+									</div>
+								</a>
+								<a href="#" class="goods">
+									<div class="goods__item">
+										<img src="img/product5.png" alt="" class="goods__image">
+
+										<div class="goods__title">
+											Бутылка для воды "Dot" (600 мл; черные цветы)
+										</div>
+
+										<div class="rating goods__rating">
+											<div class="rating__item active" data-rate="1"></div>
+											<div class="rating__item active" data-rate="2"></div>
+											<div class="rating__item active" data-rate="3"></div>
+											<div class="rating__item" data-rate="4"></div>
+											<div class="rating__item" data-rate="5"></div>
+										</div>
+
+										<div class="goods__cost">
+											29 280 ₽
+											<span class="goods__cost--old invisible">29 280 ₽</span>
+										</div>
+									</div>
+								</a>
+								<a href="#" class="goods">
+									<div class="goods__item">
+										<img src="img/product5.png" alt="" class="goods__image">
+
+										<div class="goods__title">
+											Бутылка для воды "Dot" (600 мл; черные цветы)
+										</div>
+
+										<div class="rating goods__rating">
+											<div class="rating__item active" data-rate="1"></div>
+											<div class="rating__item active" data-rate="2"></div>
+											<div class="rating__item active" data-rate="3"></div>
+											<div class="rating__item active" data-rate="4"></div>
+											<div class="rating__item" data-rate="5"></div>
+										</div>
+
+										<div class="goods__cost">
+											29 280 ₽
+											<span class="goods__cost--old invisible">29 280 ₽</span>
+										</div>
+									</div>
+								</a>
+								<a href="#" class="goods">
+									<div class="goods__item">
+										<div class="discount">Скидка</div>
+										<img src="img/product5.png" alt="" class="goods__image">
+
+										<div class="goods__title">
+											Бутылка для воды "Dot" (600 мл; черные цветы)
+										</div>
+
+										<div class="rating goods__rating">
+											<div class="rating__item active" data-rate="1"></div>
+											<div class="rating__item active" data-rate="2"></div>
+											<div class="rating__item active" data-rate="3"></div>
+											<div class="rating__item active" data-rate="4"></div>
+											<div class="rating__item" data-rate="5"></div>
+										</div>
+
+										<div class="goods__cost red">
+											29 280 ₽
+											<span class="goods__cost--old">29 280 ₽</span>
+										</div>
+									</div>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="tabs-block">
+		<div class="container">
+			<div class="row">
+				<div class="info col-xl-12">
+					<div id="tabs2" class="tabs-horizontal desktop">
+						<ul>
+							<li><a href="#tabs-5">Характеристики</a></li>
+							<li><a href="#tabs-6">Отзывы (3)</a></li>
+							<li><a href="#tabs-7">Оплата и доставка</a></li>
+							<li><a href="#tabs-8">Документы</a></li>
+						</ul>						
+							<hr class="additional__nav__line">
+						<div id="tabs-5">
+
+							<table class="features">
+								<tr>
+									<td colspan="2" class="features__title">Основные</td>
+								</tr>
+
+								<tr>
+									<td class="features__name"><span>Тип</span> <img src="img/question.png" alt=""></td>
+									<td colspan="2" class="features__text">беспружинный (на резинках)</td>
+								</tr>
+								<tr>
+									<td class="features__name"><span>Цвет</span></td>
+									<td colspan="2" class="features__text">синий</td>
+								</tr>
+								<tr>
+									<td class="features__name"><span>Режим автоматической<br>регулировки мощности</span></td>
+									<td colspan="2" class="features__text">нет</td>
+								</tr>
+								<tr>
+									<td class="features__name"><span>Форма</span></td>
+									<td colspan="2" class="features__text">щетка с ворсом, насадка для мягкой мебели</td>
+								</tr>
+
+
+
+								<tr>
+									<td colspan="2" class="features__title">Основные</td>
+								</tr>
+
+								<tr>
+									<td class="features__name"><span>Тип</span> <img src="img/question.png" alt=""></td>
+									<td colspan="2" class="features__text">беспружинный (на резинках)</td>
+								</tr>
+								<tr>
+									<td class="features__name"><span>Цвет</span></td>
+									<td colspan="2" class="features__text">синий</td>
+								</tr>
+								<tr>
+									<td class="features__name"><span>Режим автоматической<br>регулировки мощности</span></td>
+									<td colspan="2" class="features__text">нет</td>
+								</tr>
+								<tr>
+									<td class="features__name"><span>Форма</span></td>
+									<td colspan="2" class="features__text">щетка с ворсом, насадка для мягкой мебели</td>
+								</tr>
+
+
+
+								<tr>
+									<td colspan="2" class="features__title">Основные</td>
+								</tr>
+
+								<tr>
+									<td class="features__name"><span>Тип</span> <img src="img/question.png" alt=""></td>
+									<td colspan="2" class="features__text">беспружинный (на резинках)</td>
+								</tr>
+								<tr>
+									<td class="features__name"><span>Цвет</span></td>
+									<td colspan="2" class="features__text">синий</td>
+								</tr>
+								<tr>
+									<td class="features__name"><span>Режим автоматической<br>регулировки мощности</span></td>
+									<td colspan="2" class="features__text">нет</td>
+								</tr>
+								<tr>
+									<td class="features__name"><span>Форма</span></td>
+									<td colspan="2" class="features__text">щетка с ворсом, насадка для мягкой мебели</td>
+								</tr>
+							</table>
+						</div>
+						<div id="tabs-6">
+							<div id="tabs3" class="tabs-vertical">
+								<div class="tabs__reviews__title">3 отзыва</div>
+								<ul>
+									<li href="#tabs-9">
+										<a href="#tabs-9">Все отзывы <span class="tabs__reviews__count">3</span></a>
+									</li>
+									<li>
+										<a href="#tabs-10">
+											<div class="rating goods__rating">
+												<div class="rating__item active" data-rate="1"></div>
+												<div class="rating__item active" data-rate="2"></div>
+												<div class="rating__item active" data-rate="3"></div>
+												<div class="rating__item active" data-rate="4"></div>
+												<div class="rating__item active" data-rate="5"></div>
+											</div>
+											<span class="tabs__reviews__count">2</span>
+										</a>
+									</li>
+									<li>
+										<a href="#tabs-11">
+											<div class="rating goods__rating">
+												<div class="rating__item" data-rate="1"></div>
+												<div class="rating__item" data-rate="2"></div>
+												<div class="rating__item" data-rate="3"></div>
+												<div class="rating__item" data-rate="4"></div>
+											</div>
+											<span class="tabs__reviews__count invisible">3</span>
+										</a>
+									</li>
+									<li>
+										<a href="#tabs-12">
+											<div class="rating goods__rating">
+												<div class="rating__item active" data-rate="1"></div>
+												<div class="rating__item active" data-rate="2"></div>
+												<div class="rating__item active" data-rate="3"></div>
+											</div>
+											<span class="tabs__reviews__count">1</span>
+										</a>
+									</li>
+									<li>
+										<a href="#tabs-13">
+											<div class="rating goods__rating">
+												<div class="rating__item" data-rate="5"></div>
+												<div class="rating__item" data-rate="5"></div>
+											</div>
+											<span class="tabs__reviews__count invisible">3</span>
+										</a>
+									</li>
+									<li>
+										<a href="#tabs-14">
+											<div class="rating goods__rating">
+												<div class="rating__item" data-rate="5"></div>
+											</div>
+											<span class="tabs__reviews__count invisible">3</span>
+										</a>
+									</li>
+									<li class="tabs__reviews__button">
+										<button class="reviews__write">Написать отзыв </button>
+									</li>
+								</ul>	
+								<div id="tabs-9">
+									<div class="review__block first">
+										<div class="rating">
+											<div class="rating__item active" data-rate="1"></div>
+											<div class="rating__item active" data-rate="2"></div>
+											<div class="rating__item active" data-rate="3"></div>
+											<div class="rating__item active" data-rate="4"></div>
+											<div class="rating__item active" data-rate="5"></div>
+											<span class="buyer">Ирина</span>
+											<span class="date">26 февраля 2019</span>
+										</div>
+										<div class="review__component">
+											<div class="review__component__title">Плюсы</div>
+											<div class="review__component__text">Лучший батут!</div>
+										</div>
+										<div class="review__component">
+											<div class="review__component__title">Комментарий</div>
+											<div class="review__component__text">Ребёнок довольный, прыгает супер, сетка отличная. Из недостатков - при сборке все пальцы отбил, многовато места занимает из за ножек, зато устойчивый. Рекомендую!</div>
+										</div>
+									</div>
+
+									<div class="review__block">
+										<div class="rating">
+											<div class="rating__item active" data-rate="1"></div>
+											<div class="rating__item active" data-rate="2"></div>
+											<div class="rating__item active" data-rate="3"></div>
+											<div class="rating__item" data-rate="4"></div>
+											<div class="rating__item" data-rate="5"></div>
+											<span class="buyer">Тимофей 3463</span>
+											<span class="date">26 февраля 2019</span>
+										</div>
+										<div class="review__component">
+											<div class="review__component__title">Минусы</div>
+											<div class="review__component__text">Порвался через месяц!!!! ужасный</div>
+										</div>
+									</div>
+
+									<div class="review__block last">
+										<div class="rating">
+											<div class="rating__item active" data-rate="1"></div>
+											<div class="rating__item active" data-rate="2"></div>
+											<div class="rating__item active" data-rate="3"></div>
+											<div class="rating__item active" data-rate="4"></div>
+											<div class="rating__item active" data-rate="5"></div>
+											<span class="buyer">Крис</span>
+											<span class="date">13 февраля 2019</span>
+										</div>
+										<div class="review__component">
+											<div class="review__component__title">Плюсы</div>
+											<div class="review__component__text">Лучший батут!</div>
+										</div>
+										<div class="review__component">
+											<div class="review__component__title">Минусы</div>
+											<div class="review__component__text">Тяжелый</div>
+										</div>
+										<div class="review__component">
+											<div class="review__component__title">Комментарий</div>
+											<div class="review__component__text">Ребёнок довольный, прыгает супер, сетка отличная. Из недостатков - при сборке все пальцы отбил, многовато места занимает из за ножек, зато устойчивый. Рекомендую!</div>
+										</div>
+									</div>
+								</div>
+								<div id="tabs-10">
+									<div class="review__block first">
+										<div class="rating">
+											<div class="rating__item active" data-rate="1"></div>
+											<div class="rating__item active" data-rate="2"></div>
+											<div class="rating__item active" data-rate="3"></div>
+											<div class="rating__item active" data-rate="4"></div>
+											<div class="rating__item active" data-rate="5"></div>
+											<span class="buyer">Ирина</span>
+											<span class="date">26 февраля 2019</span>
+										</div>
+										<div class="review__component">
+											<div class="review__component__title">Плюсы</div>
+											<div class="review__component__text">Лучший батут!</div>
+										</div>
+										<div class="review__component">
+											<div class="review__component__title">Комментарий</div>
+											<div class="review__component__text">Ребёнок довольный, прыгает супер, сетка отличная. Из недостатков - при сборке все пальцы отбил, многовато места занимает из за ножек, зато устойчивый. Рекомендую!</div>
+										</div>
+									</div>
+
+									<div class="review__block last">
+										<div class="rating">
+											<div class="rating__item active" data-rate="1"></div>
+											<div class="rating__item active" data-rate="2"></div>
+											<div class="rating__item active" data-rate="3"></div>
+											<div class="rating__item active" data-rate="4"></div>
+											<div class="rating__item active" data-rate="5"></div>
+											<span class="buyer">Крис</span>
+											<span class="date">13 февраля 2019</span>
+										</div>
+										<div class="review__component">
+											<div class="review__component__title">Плюсы</div>
+											<div class="review__component__text">Лучший батут!</div>
+										</div>
+										<div class="review__component">
+											<div class="review__component__title">Минусы</div>
+											<div class="review__component__text">Тяжелый</div>
+										</div>
+										<div class="review__component">
+											<div class="review__component__title">Комментарий</div>
+											<div class="review__component__text">Ребёнок довольный, прыгает супер, сетка отличная. Из недостатков - при сборке все пальцы отбил, многовато места занимает из за ножек, зато устойчивый. Рекомендую!</div>
+										</div>
+									</div>
+								</div>
+								<div id="tabs-11">
+
+								</div>
+								<div id="tabs-12">
+									<div class="review__block first last">
+										<div class="rating">
+											<div class="rating__item active" data-rate="1"></div>
+											<div class="rating__item active" data-rate="2"></div>
+											<div class="rating__item active" data-rate="3"></div>
+											<div class="rating__item" data-rate="4"></div>
+											<div class="rating__item" data-rate="5"></div>
+											<span class="buyer">Тимофей 3463</span>
+											<span class="date">26 13 февраля 2019 2019</span>
+										</div>
+										<div class="review__component">
+											<div class="review__component__title">Минусы</div>
+											<div class="review__component__text">Порвался через месяц!!!! ужасный</div>
+										</div>
+									</div>
+								</div>
+								<div id="tabs-13">
+									
+								</div>
+								<div id="tabs-14">
+									
+								</div>
+							</div>
+						</div>
+						<div id="tabs-7">
+							<div class="tabs__delivery">
+								<div class="tabs__delivery__block">
+									<div class="delivery__block__title">Доставка <a href="#" class="map">Смотреть на карте <div class="arrow"></div></a></div>
+									<div>
+										<ul class="delovery__block__list">
+											<li><span>По всей России</span></li>
+											<li><span>Москва - курьером или самовывоз</span></li>
+											<li><span>Другие города - курьером или самовывоз у транспортной компании</span></li>
+										</ul>
+									</div>
+								</div>
+
+								<div class="tabs__delivery__block">
+									<div class="delivery__block__title">Оплата</div>
+									<div>
+										<ul class="delovery__block__list">
+											<li><span>Онлайн или при получении</span></li>
+											<li><span>Наличными или банковской картой</span></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div id="tabs-8">
+
+						</div>
+					</div>
+							
+						<div id="tabs2" class="mobile tabs-horizontal">
+							<ul id="owl8">
+								<li><a href="#tabs-5">Характеристики</a></li>
+								<li><a href="#tabs-6">Отзывы (3)</a></li>
+								<li><a href="#tabs-7">Оплата и доставка</a></li>
+								<li><a href="#tabs-8">Документы</a></li>
+							</ul>						
+							<hr class="additional__nav__line">
+							<div id="tabs-5">
+
+								<div class="features">
+									<div class="features__title">Основные</div>
+
+									<div class="features__name">Тип <img src="img/question.png" alt=""></div>
+									<div class="features__text">беспружинный  (на резинках)</div>
+
+									<div class="features__name">Цвет</div>
+									<div class="features__text">синий</div>
+
+									<div class="features__name">Режим beta автоматической регулировки мощности </div>
+									<div class="features__text">нет</div>
+
+									<div class="features__name">Форма</div>
+									<div class="features__text">щетка с ворсом, насадка для мягкой мебели</div>
+								</div>
+
+								<div class="features">
+									<div class="features__title">Основные</div>
+
+									<div class="features__name">Тип <img src="img/question.png" alt=""></div>
+									<div class="features__text">беспружинный  (на резинках)</div>
+
+									<div class="features__name">Цвет</div>
+									<div class="features__text">синий</div>
+
+									<div class="features__name">Режим beta автоматической регулировки мощности </div>
+									<div class="features__text">нет</div>
+
+									<div class="features__name">Форма</div>
+									<div class="features__text">щетка с ворсом, насадка для мягкой мебели</div>
+								</div>
+
+								<div class="features">
+									<div class="features__title">Основные</div>
+
+									<div class="features__name">Тип <img src="img/question.png" alt=""></div>
+									<div class="features__text">беспружинный  (на резинках)</div>
+
+									<div class="features__name">Цвет</div>
+									<div class="features__text">синий</div>
+
+									<div class="features__name">Режим beta автоматической регулировки мощности </div>
+									<div class="features__text">нет</div>
+
+									<div class="features__name">Форма</div>
+									<div class="features__text last">щетка с ворсом, насадка для мягкой мебели</div>
+								</div>
+							</div>
+							<div id="tabs-6">
+								<div id="tabs4" class="mobile__reviews">
+									<div class="dropdown dropdown__reviews">
+										<a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+											<img src="img/reviews-sort.png" alt="">
+										</a>
+
+										<div class="dropdown-menu" aria-labelledby="dropdownMenuLink2">
+											<ul>
+												<li>
+													<a class="dropdown-item mobile__dropdown" href="#tabs-15">
+														Все отзывы
+													</a>
+												</li>
+												<li>
+													<a class="dropdown-item mobile__dropdown" href="#tabs-16">
+														<div class="rating goods__rating">
+															<div class="rating__item active" data-rate="1"></div>
+															<div class="rating__item active" data-rate="2"></div>
+															<div class="rating__item active" data-rate="3"></div>
+															<div class="rating__item active" data-rate="4"></div>
+															<div class="rating__item active" data-rate="5"></div>
+														</div>
+													</a>
+												</li>
+												<li>
+													<a class="dropdown-item mobile__dropdown" href="#tabs-17">
+														<div class="rating goods__rating">
+															<div class="rating__item" data-rate="1"></div>
+															<div class="rating__item" data-rate="2"></div>
+															<div class="rating__item" data-rate="3"></div>
+															<div class="rating__item" data-rate="4"></div>
+														</div>
+													</a>
+												</li>
+												<li>
+													<a class="dropdown-item mobile__dropdown" href="#tabs-18">
+														<div class="rating goods__rating">
+															<div class="rating__item active" data-rate="1"></div>
+															<div class="rating__item active" data-rate="2"></div>
+															<div class="rating__item active" data-rate="3"></div>
+														</div>
+													</a>
+												</li>
+												<li>
+													<a class="dropdown-item mobile__dropdown" href="#tabs-19">
+														<div class="rating goods__rating">
+															<div class="rating__item" data-rate="1"></div>
+															<div class="rating__item" data-rate="2"></div>
+														</div>
+													</a>
+												</li>
+												<li>
+													<a class="dropdown-item mobile__dropdown" href="#tabs-20">
+														<div class="rating goods__rating">
+															<div class="rating__item" data-rate="1"></div>
+														</div>
+													</a>
+												</li>
+											</ul>
+										</div>
+									</div>
+									<div class="reviews__tab" id="tabs-15">
+										<div class="mobile__reviews__count">3 отзыва</div>
+
+										<div class="mobile__reviews__block">
+											<div class="rating goods__rating">
+												<div class="rating__item active" data-rate="1"></div>
+												<div class="rating__item active" data-rate="2"></div>
+												<div class="rating__item active" data-rate="3"></div>
+												<div class="rating__item active" data-rate="4"></div>
+												<div class="rating__item active" data-rate="5"></div>
+											</div>
+											<div class="buyer">Ирина <span class="date">26 февраля 2019</span></div>
+											<div class="review__component">
+												<div class="review__component__title">Плюсы</div>
+												<div class="review__component__text">Лучший батут!</div>
+											</div>
+											<div class="review__component reviews__last__component">
+												<div class="review__component__title">Комментарий</div>
+												<div class="review__component__text">Ребёнок довольный, прыгает супер, сетка отличная. Из недостатков - при сборке все пальцы отбил, многовато места занимает из за ножек, зато устойчивый. Рекомендую!</div>
+											</div>
+										</div>
+
+										<div class="mobile__reviews__block">
+											<div class="rating goods__rating">
+												<div class="rating__item active" data-rate="1"></div>
+												<div class="rating__item active" data-rate="2"></div>
+												<div class="rating__item active" data-rate="3"></div>
+												<div class="rating__item" data-rate="4"></div>
+												<div class="rating__item" data-rate="5"></div>
+											</div>
+											<div class="buyer">Ирина <span class="date">26 февраля 2019</span></div>
+											<div class="review__component reviews__last__component">
+												<div class="review__component__title">Минусы</div>
+												<div class="review__component__text">Порвался через месяц!!!! ужасный</div>
+											</div>
+										</div>
+
+										<div class="mobile__reviews__block">
+											<div class="rating goods__rating">
+												<div class="rating__item active" data-rate="1"></div>
+												<div class="rating__item active" data-rate="2"></div>
+												<div class="rating__item active" data-rate="3"></div>
+												<div class="rating__item active" data-rate="4"></div>
+												<div class="rating__item active" data-rate="5"></div>
+											</div>
+											<div class="buyer">Ирина <span class="date">26 февраля 2019</span></div>
+											<div class="review__component">
+												<div class="review__component__title">Плюсы</div>
+												<div class="review__component__text">Лучший батут!</div>
+											</div>
+											<div class="review__component reviews__last__component last__review">
+												<div class="review__component__title">Комментарий</div>
+												<div class="review__component__text">Ребёнок довольный, прыгает супер, сетка отличная. Из недостатков - при сборке все пальцы отбил, многовато места занимает из за ножек, зато устойчивый. Рекомендую!</div>
+											</div>
+										</div>
+
+										<a href="#" class="write__reivew">Написать отзыв </a>
+									</div>
+									<div class="reviews__tab" id="tabs-16">
+										<div class="mobile__reviews__count">2 отзыва</div>
+
+										<div class="mobile__reviews__block">
+											<div class="rating goods__rating">
+												<div class="rating__item active" data-rate="1"></div>
+												<div class="rating__item active" data-rate="2"></div>
+												<div class="rating__item active" data-rate="3"></div>
+												<div class="rating__item active" data-rate="4"></div>
+												<div class="rating__item active" data-rate="5"></div>
+											</div>
+											<div class="buyer">Ирина <span class="date">26 февраля 2019</span></div>
+											<div class="review__component">
+												<div class="review__component__title">Плюсы</div>
+												<div class="review__component__text">Лучший батут!</div>
+											</div>
+											<div class="review__component reviews__last__component">
+												<div class="review__component__title">Комментарий</div>
+												<div class="review__component__text">Ребёнок довольный, прыгает супер, сетка отличная. Из недостатков - при сборке все пальцы отбил, многовато места занимает из за ножек, зато устойчивый. Рекомендую!</div>
+											</div>
+										</div>
+
+										<div class="mobile__reviews__block">
+											<div class="rating goods__rating">
+												<div class="rating__item active" data-rate="1"></div>
+												<div class="rating__item active" data-rate="2"></div>
+												<div class="rating__item active" data-rate="3"></div>
+												<div class="rating__item active" data-rate="4"></div>
+												<div class="rating__item active" data-rate="5"></div>
+											</div>
+											<div class="buyer">Ирина <span class="date">26 февраля 2019</span></div>
+											<div class="review__component">
+												<div class="review__component__title">Плюсы</div>
+												<div class="review__component__text">Лучший батут!</div>
+											</div>
+											<div class="review__component reviews__last__component last__review">
+												<div class="review__component__title">Комментарий</div>
+												<div class="review__component__text">Ребёнок довольный, прыгает супер, сетка отличная. Из недостатков - при сборке все пальцы отбил, многовато места занимает из за ножек, зато устойчивый. Рекомендую!</div>
+											</div>
+										</div>	
+
+										<a href="#" class="write__reivew">Написать отзыв </a>
+									</div>
+									<div class="reviews__tab empty" id="tabs-17">
+										<a href="#" class="write__reivew">Написать отзыв </a>
+									</div>
+									<div class="reviews__tab" id="tabs-18">
+										<div class="mobile__reviews__count">1 отзыв</div>
+
+										<div class="mobile__reviews__block">
+											<div class="rating goods__rating">
+												<div class="rating__item active" data-rate="1"></div>
+												<div class="rating__item active" data-rate="2"></div>
+												<div class="rating__item active" data-rate="3"></div>
+												<div class="rating__item" data-rate="4"></div>
+												<div class="rating__item" data-rate="5"></div>
+											</div>
+											<div class="buyer">Ирина <span class="date">26 февраля 2019</span></div>
+											<div class="review__component reviews__last__component last__review">
+												<div class="review__component__title">Минусы</div>
+												<div class="review__component__text">Порвался через месяц!!!! ужасный</div>
+											</div>
+										</div>
+
+										<a href="#" class="write__reivew">Написать отзыв </a>
+									</div>
+									<div class="reviews__tab empty" id="tabs-19">	
+										<a href="#" class="write__reivew">Написать отзыв </a>
+									</div>
+									<div class="reviews__tab empty" id="tabs-20">
+										<a href="#" class="write__reivew">Написать отзыв </a>
+									</div>
+								</div>
+							</div>
+							<div id="tabs-7">
+								<div class="tabs__delivery">
+									<div class="tabs__delivery__block">
+										<div class="delivery__block__title">Доставка</div>
+										<div>
+											<ul class="delovery__block__list">
+												<li><span>По всей России</span></li>
+												<li><span>Москва - курьером или самовывоз</span></li>
+												<li><span>Другие города - курьером или самовывоз у транспортной компании</span></li>
+											</ul>
+										</div>
+									</div>
+
+									<a href="#" class="map">Смотреть на карте <div class="arrow"></div></a>
+
+									<div class="tabs__delivery__block">
+										<div class="delivery__block__title">Оплата</div>
+										<div>
+											<ul class="delovery__block__list">
+												<li><span>Онлайн или при получении</span></li>
+												<li><span>Наличными или банковской картой</span></li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div id="tabs-8">
+
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>	
+
+	<div class="recently-block">
+		<div class="container">
+			<div class="row">
+				<div class="content-section col-xl-12">
+					<div class="content-section__title recently">
+						Вы недавно смотрели
+					</div>
+					<div class="nav-slides desktop">
+						<div class="prev-slide" id="ps5"></div>
+						<div class="next-slide" id="ns5"></div>
+					</div>
+					<div id="owl5" class="owl-carousel">
+								<a href="#" class="goods">
+									<div class="goods__item">
+										<div class="discount">Скидка</div>
+										<img src="img/product5.png" alt="" class="goods__image">
+
+										<div class="goods__title">
+											Бутылка для воды "Dot" (600 мл; черные цветы)
+										</div>
+
+										<div class="rating goods__rating">
+											<div class="rating__item active" data-rate="1"></div>
+											<div class="rating__item active" data-rate="2"></div>
+											<div class="rating__item active" data-rate="3"></div>
+											<div class="rating__item active" data-rate="4"></div>
+											<div class="rating__item" data-rate="5"></div>
+										</div>
+
+										<div class="goods__cost red">
+											29 280 ₽
+											<span class="goods__cost--old">29 280 ₽</span>
+										</div>
+									</div>
+								</a>
+								<a href="#" class="goods">
+									<div class="goods__item">
+										<div class="bestseller">Хит продаж</div>
+										<img src="img/product5.png" alt="" class="goods__image">
+
+										<div class="goods__title">
+											Бутылка для воды "Dot" (600 мл; черные цветы)
+										</div>
+
+										<div class="rating goods__rating">
+											<div class="rating__item active" data-rate="1"></div>
+											<div class="rating__item active" data-rate="2"></div>
+											<div class="rating__item active" data-rate="3"></div>
+											<div class="rating__item active" data-rate="4"></div>
+											<div class="rating__item active" data-rate="5"></div>
+										</div>
+
+										<div class="goods__cost">
+											29 280 ₽
+											<span class="goods__cost--old invisible">29 280 ₽</span>
+										</div>
+									</div>
+								</a>
+								<a href="#" class="goods">
+									<div class="goods__item">
+										<img src="img/product5.png" alt="" class="goods__image">
+
+										<div class="goods__title">
+											Бутылка для воды "Dot" (600 мл; черные цветы)
+										</div>
+
+										<div class="rating goods__rating">
+											<div class="rating__item active" data-rate="1"></div>
+											<div class="rating__item active" data-rate="2"></div>
+											<div class="rating__item active" data-rate="3"></div>
+											<div class="rating__item" data-rate="4"></div>
+											<div class="rating__item" data-rate="5"></div>
+										</div>
+
+										<div class="goods__cost">
+											29 280 ₽
+											<span class="goods__cost--old invisible">29 280 ₽</span>
+										</div>
+									</div>
+								</a>
+								<a href="#" class="goods">
+									<div class="goods__item">
+										<img src="img/product5.png" alt="" class="goods__image">
+
+										<div class="goods__title">
+											Бутылка для воды "Dot" (600 мл; черные цветы)
+										</div>
+
+										<div class="rating goods__rating">
+											<div class="rating__item active" data-rate="1"></div>
+											<div class="rating__item active" data-rate="2"></div>
+											<div class="rating__item active" data-rate="3"></div>
+											<div class="rating__item active" data-rate="4"></div>
+											<div class="rating__item" data-rate="5"></div>
+										</div>
+
+										<div class="goods__cost">
+											29 280 ₽
+											<span class="goods__cost--old invisible">29 280 ₽</span>
+										</div>
+									</div>
+								</a>
+								<a href="#" class="goods">
+									<div class="goods__item">
+										<div class="discount">Скидка</div>
+										<img src="img/product5.png" alt="" class="goods__image">
+
+										<div class="goods__title">
+											Бутылка для воды "Dot" (600 мл; черные цветы)
+										</div>
+
+										<div class="rating goods__rating">
+											<div class="rating__item active" data-rate="1"></div>
+											<div class="rating__item active" data-rate="2"></div>
+											<div class="rating__item active" data-rate="3"></div>
+											<div class="rating__item active" data-rate="4"></div>
+											<div class="rating__item" data-rate="5"></div>
+										</div>
+
+										<div class="goods__cost red">
+											29 280 ₽
+											<span class="goods__cost--old">29 280 ₽</span>
+										</div>
+									</div>
+								</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="blog-block">
+		<div class="container">
+			<div class="row">
+				<div class="content-section col-xl-12">
+					<div class="content-section__title">Блог</div>
+					<a href="#" class="to-blog desktop">Перейти в блог <div class="arrow"></div></a>
+
+					<div class="nav-slides desktop blog-nav">
+						<div class="prev-slide" id="ps6"></div>
+						<div class="next-slide" id="ns6"></div>
+					</div>
+					<div id="owl6" class="owl-carousel blog__content">
+						<a href="#">
+							<img src="img/blog1.png" alt="">
+						</a>
+						<a href="#">
+							<img src="img/blog1.png" alt="">
+						</a>
+						<a href="#">
+							<img src="img/blog1.png" alt="">
+						</a>
+						<a href="#">
+							<img src="img/blog1.png" alt="">
+						</a>
+						<a href="#">
+							<img src="img/blog1.png" alt="">
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+		<div class="container">
+			<div class="row">
+				<div class="footer col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+					<div class="footer__social col-xl-3 col-lg-3 col-md-4 col-sm-12">
+						<div class="footer__logo">
+							<a href="#"><img src="img/logo.png" alt=""></a>
+						</div>
+						<div class="footer__market">
+							Интернет-магазин товаров для активного образа жизни, спорта и здоровья.
+						</div>
+						<div class="accordion mobile tablet" id="accordionFooter">
+							<div class="card">
+								<div class="card-header" id="headingOne">
+									<button class="footer__button collapsed" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+										Магазин и Блог <img class="footer__arrow" src="img/footer-arrow.png" alt="">
+									</button>
+								</div>
+								<div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionFooter">
+									<div class="card-body">
+										<a class="footer__link" href="#">Каталог</a>
+										<a class="footer__link" href="#">Блог</a>
+										<a class="footer__link" href="#">Скидки</a>
+									</div>
+								</div>
+							</div>
+							<div class="card">
+								<div class="card-header" id="headingTwo">
+									<button class="footer__button collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+										Сервис и поддержка <img class="footer__arrow" src="img/footer-arrow.png" alt="">
+									</button>
+								</div>
+								<div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionFooter">
+									<div class="card-body">
+										<a class="footer__link" href="#">Доставка</a>
+										<a class="footer__link" href="#">Оплата</a>
+										<a class="footer__link" href="#">Написать боссу</a>
+									</div>
+								</div>
+							</div>
+							<div class="card">
+								<div class="card-header" id="headingThree">
+									<button class="footer__button collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+										О компании <img class="footer__arrow" src="img/footer-arrow.png" alt="">
+									</button>
+								</div>
+								<div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionFooter">
+									<div class="card-body">
+										<a class="footer__link" href="#">О нас</a>
+										<a class="footer__link" href="#">Контакты</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="footer__circles desktop tablet__inv">
+							<a href="#" class="footer__circles--image mobile">
+								<div class="image-6"></div>
+							</a>
+							<a href="#" class="footer__circles--image">
+								<div class="image-1"></div>
+							</a>
+							<a href="#" class="footer__circles--image">
+								<div class="image-2"></div>
+							</a>
+							<a href="#" class="footer__circles--image">
+								<div class="image-3"></div>
+							</a>
+							<a href="#" class="footer__circles--image">
+								<div class="image-4"></div>
+							</a>
+							<a href="#" class="footer__circles--image">
+								<div class="image-5"></div>
+							</a>
+						</div>
+						<div class="footer__circles mobile tablet">
+							<a href="#" class="footer__circles--image">
+								<div class="image-6"></div>
+							</a>
+							<a href="#" class="footer__circles--image">
+								<div class="image-1"></div>
+							</a>
+							<a href="#" class="footer__circles--image">
+								<div class="image-2"></div>
+							</a>
+							<a href="#" class="footer__circles--image">
+								<div class="image-3"></div>
+							</a>
+							<a href="#" class="footer__circles--image">
+								<div class="image-4"></div>
+							</a>
+							<a href="#" class="footer__circles--image">
+								<div class="image-5"></div>
+							</a>
+						</div>
+						<div class="organization mobile tablet">GetActive, 2020</div>
+					</div>
+
+					<div class="footer__links offset-xl-3 offset-lg-2 offset-md-1 col-xl-6 col-lg-7 col-md-7 col-12 desktop tablet__inv">
+						<div class="footer__links--content">
+							<div class="links__column column-1">
+								<div class="column__title">
+									Сервис и поддержка
+								</div>
+								<a href="#" class="column__text">Доставка</a>
+								<a href="#" class="column__text">Оплата</a>
+								<a href="#" class="column__text">Написать боссу</a>
+							</div>
+							<div class="links__column">
+								<div class="column__title">
+									Магазин и Блог
+								</div>
+								<a href="#" class="column__text">Каталог</a>
+								<a href="#" class="column__text">Блог</a>
+								<a href="#" class="column__text">Скидки</a>
+							</div>
+							<div class="links__column column-3">
+								<div class="column__title">
+									О компании
+								</div>
+								<a href="#" class="column__text">О нас</a>
+								<a href="#" class="column__text">Контакты</a>
+							</div>
+						</div>
+						<div class="organization">GetActive, 2020</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	<!-- <script src="js/stars.js"></script> -->
+	<script src="js/color.js"></script>
+	<script src="js/city.js"></script>	
+	<script src="js/size.js"></script>
+	<script src="js/tabs.js"></script>
+	<script src="js/slider.js"></script>
+	<script src="js/owl-slider.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+</html>
