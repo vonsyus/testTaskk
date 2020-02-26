@@ -1,24 +1,5 @@
 $(document).ready(function() {
 	let owl7 = $('#owl7');
-	$(window).resize(function() {
-		if ($(window).width() <= 575) {
-			document.getElementById('owl7').classList.add('owl-carousel');
-
-			owl7.owlCarousel({
-				items: 4,
-				touchDrag: true,
-				margin: 0,
-				autoWidth: true
-			});
-		} else {
-			document.getElementById('owl7').classList.remove('owl-carousel');		
-		}
-
-		if (($(window).width() >= 576) && ($(window).width() <= 576)) {
-			location.reload();
-		}
-	});	
-
 	if ($(window).width() <= 575) {
 		document.getElementById('owl7').classList.add('owl-carousel');
 		owl7.owlCarousel({
@@ -27,13 +8,34 @@ $(document).ready(function() {
 			margin: 0,
 			autoWidth: true
 		});
-	} else {
-		document.getElementById('owl7').classList.remove('owl-carousel');
 	}
+
+	$(window).resize(function() {
+		if ($(window).width() <= 575) {
+			document.getElementById('owl7').classList.add('owl-carousel');
+			owl7.trigger('destroy.owl.carousel');
+			owl7.owlCarousel({
+				items: 4,
+				touchDrag: true,
+				margin: 0,
+				autoWidth: true
+			});
+		} else {
+			document.getElementById('owl7').classList.add('owl-carousel');
+			owl7.trigger('destroy.owl.carousel');
+			owl7.owlCarousel({
+				items: 4,
+				touchDrag: false,
+				mouseDrag: false,
+				margin: 0,
+				autoWidth: true
+			});
+		}
+	});	
 
 	let owl1 = $('#owl1');
 	owl1.owlCarousel({
-		loop: "true",
+		// loop: "true",
 		responsive: {
 			0: {
 				items: 1,

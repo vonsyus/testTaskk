@@ -85,20 +85,8 @@ hr {
   font-size: 20px;
   margin-left: 16px;
 }
-#owl7 {
-  z-index: 100;
-}
-#owl7 .owl-nav {
-  display: none;
-}
-#owl7 .owl-dots {
-  display: none;
-}
 #owl7 .owl-stage {
-  width: 100% !important;
-}
-.additional__nav__line {
-  z-index: 1;
+  width: 557px !important;
 }
 .ui-tabs-vertical {
   width: 55em;
